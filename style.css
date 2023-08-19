@@ -112,6 +112,7 @@ section {
 button {
 	font-family: Riffic;
 	font-size: var(--button-f-size);
+	cursor: pointer;
 }
 
 /*******************  CHOICES BUTTONS  ********************/
