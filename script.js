@@ -461,6 +461,15 @@ class Controller
 //***********************************************  CONFIG  *********************************************//
 /********************************************************************************************************/
 
+const gameSection = document.getElementById('gameSection');
+
+for (let i = 1; i <= 9; i++) {
+    const button = document.createElement('button');
+    button.className = 'case';
+    button.onclick = () => rootCase(i);
+    gameSection.appendChild(button);
+}
+
 let player1 = new Player(texts.player1Name, texts.player1Value, false, colors.player1, [0,0], false); 
 let player2 = new Player(texts.player2Name, texts.player2Value, false, colors.player2, [0,null], false);
 let computer = new Player(texts.computerName, texts.player2Value, false, colors.computer, [0,0], true);
